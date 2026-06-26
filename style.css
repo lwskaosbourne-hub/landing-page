@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Ole&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: auto;
+    background-color: black;
+    background-image: url(https://64.media.tumblr.com/tumblr_m9jk7wdxgF1rc7pm9o1_400.gifv);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    align-content: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5svw;
+    color: white;
+}
+
+.Nome {
+    font-size: large;
+    text-shadow: 0 0 5px #a200ff, 0 0 10px #a200ff, 0 0 20px #a200ff, 0 0 40px #a200ff, 0 0 80px #a200ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+.Sub {
+    font-size: medium;
+    color: gray;
+}
+
+#Foto {
+    width: 20vh;
+    height: 20vh;
+    background-image: url("foto.jpeg");
+    background-size: cover;
+    background-position-y: 30%;
+    border-radius: 100%;
+    margin-bottom: 2vh;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #a200ff, 0 0 10px #a200ff, 0 0 20px #a200ff, 0 0 40px #a200ff, 0 0 80px #a200ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff00dd, 0 0 20px #ff00dd, 0 0 40px #ff00dd, 0 0 80px #ff00dd, 0 0 160px #ff00dd;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+#Logo {
+    font-family: "Chelsea Market", system-ui;
+    align-self: center;
+    color: white;
+    font-size: 3vh;
+    padding-left: 3vw;
+}
+
+#Links {
+    margin-left: auto;
+    margin-right: 5vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(180deg, #d1d1d17a 0%, #f2f2f278 50%, #c7c7c775 100%);
+    border-radius: 20px;
+    margin: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.SectionTitle {
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:800px) {
+    section {
+        width: 90%;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #Links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Logo {
+        padding-left: auto;
+    }
+}
+
+.content {
+    text-align: left;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: linear-gradient(180deg, #1d1d1d7a 0%, #4b4b4b7a 50%, #1d1d1d7a 100%);
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+.LinksTitle {
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: small;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    color: gray;
+    padding: 5px;
+}
+
+a:hover {
+    color: white;
+}
