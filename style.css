@@ -106,30 +106,6 @@ section {
     margin-bottom: 30px;
 }
 
-@media screen and (max-width:800px) {
-    section {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    p {
-        font-size: smaller;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    #Links {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #Logo {
-        padding-left: auto;
-    }
-}
-
 .content {
     text-align: left;
 }
@@ -178,4 +154,30 @@ a {
 
 a:hover {
     color: white;
+}
+
+@media screen and (max-width:800px) {
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 80%;
+        font-size: small;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #Links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Logo {
+        padding-left: auto;
+    }
 }
