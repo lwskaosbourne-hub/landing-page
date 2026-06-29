@@ -63,6 +63,10 @@ nav {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
     background-color: black;
 }
 
@@ -108,6 +112,19 @@ section {
 
 .content {
     text-align: left;
+}
+
+article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: medium;
+    text-align: left;
+    margin-top: 50px;
 }
 
 aside {
